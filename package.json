@@ -1,0 +1,21 @@
+{
+  "name": "tavi-ai",
+  "version": "1.0.0",
+  "description": "Tavi AI — Production conversational AI created by Tilak Dalai",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build",
+    "test:server": "npm --prefix server test",
+    "verify:connections": "npm --prefix server run verify"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "Tilak Dalai",
+  "license": "MIT"
+}
+
